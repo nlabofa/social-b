@@ -16,7 +16,7 @@ import Swiper from "../components/common/Swiper";
 
 export default class OnBoardingScreens extends Component {
   componentDidMount() {
-    Platform.OS === "ios" ? StatusBar.setHidden(true) : null;
+    StatusBar.setHidden(true);
   }
   render() {
     return (
