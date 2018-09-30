@@ -14,6 +14,7 @@ import {
   View // Container component
 } from "react-native";
 import Button from "./Button";
+import { Actions as FluxRouter } from "react-native-router-flux";
 
 // Detect screen width and height
 const { width, height } = Dimensions.get("window");
@@ -247,13 +248,11 @@ export default class Swiper extends Component {
         {lastScreen ? (
           // Show this button on the last screen
           // TODO: Add a handler that would send a user to your app after onboarding is complete
-          <Button
-            text="Start Now"
-            onPress={() => console.log("Send me to the app")}
-          />
+          <Button text="CONTINUE" onPress={() => FluxRouter.authscreen()} />
         ) : (
           // Or this one otherwise
-          <Button text="Continue" onPress={() => this.swipe()} />
+          <Button text="SKIP" onPress={() => FluxRouter.authscreen()} />
+          //<Button text="SKIP" onPress={() => this.swipe()} />
         )}
       </View>
     );

@@ -67,10 +67,6 @@ export default class OnBoardingScreens extends Component {
     );
   }
 }
-const iconStyles = {
-  size: 100,
-  color: "#FFFFFF"
-};
 
 const styles = StyleSheet.create({
   // Slide styles
@@ -128,7 +124,7 @@ const styles = StyleSheet.create({
   // Header styles
   header: {
     color: "#FFFFFF",
-    fontFamily: "Avenir",
+    fontFamily: "Roboto-Medium",
     fontSize: 30,
     fontWeight: "bold",
     marginVertical: 15
@@ -136,7 +132,7 @@ const styles = StyleSheet.create({
   // Text below header
   text: {
     color: "#FFFFFF",
-    fontFamily: "Avenir",
+    fontFamily: "Roboto-Regular",
     fontSize: 20,
     marginHorizontal: 40,
     textAlign: "center"
