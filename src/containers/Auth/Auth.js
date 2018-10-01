@@ -7,6 +7,7 @@ import {
   TouchableOpacity
 } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
+import { Actions } from "react-native-router-flux";
 const auth = () => {
   const {
     InputBox,
@@ -26,6 +27,10 @@ const auth = () => {
     GoogleIcon,
     authScreenBottomStyle
   } = styles;
+  login = () => {
+    Actions.tabbar({ type: "reset" });
+    Actions["Shows"]();
+  };
   return (
     <View style={authScreen}>
       <View style={authScreenFirstHead}>
@@ -94,7 +99,7 @@ const auth = () => {
             />
           </View>
         </View>
-        <TouchableOpacity style={button}>
+        <TouchableOpacity style={button} onPress={() => login()}>
           <Text style={buttonText}>Sign Up</Text>
         </TouchableOpacity>
       </View>
