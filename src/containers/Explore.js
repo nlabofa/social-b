@@ -41,7 +41,7 @@ class Explore extends Component {
     const { container, TagView, tagsText, refreshIcon, refreshView } = styles;
     return (
       <ScrollView style={container}>
-        <SearchBox placeholder="Search for  videos and articles" />
+        <SearchBox placeholder="Search for a category or hashtag" />
         <View style={{ flexDirection: "column", marginTop: 20 }}>
           <Text style={tagsText}>Tags</Text>
           <View style={TagView}>{renderTags}</View>

@@ -6,6 +6,7 @@ import OnBoardingScreen from "./src/containers/OnBoardingScreen";
 import Auth from "./src/containers/Auth/Auth";
 import Home from "./src/containers/Home";
 import ExploreScreen from "./src/containers/Explore";
+import CategoriesScreen from "./src/containers/Categories";
 import Shows from "./src/containers/Shows";
 import Explore from "./src/assets/img/ex.png";
 import ExploreAct from "./src/assets/img/ex-active.png";
@@ -45,14 +46,14 @@ const RouterComponent = () => {
             component={ExploreScreen}
             hideNavBar="true"
             title="Explore"
-            initial={true}
           />
           <Scene
             key="Categories"
             icon={BaseImage}
-            component={Shows}
+            component={CategoriesScreen}
             hideNavBar="true"
             title="Categories"
+            initial={true}
           />
           <Scene
             key="You"
