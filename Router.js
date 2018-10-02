@@ -5,6 +5,7 @@ import { Scene, Router, Actions } from "react-native-router-flux";
 import OnBoardingScreen from "./src/containers/OnBoardingScreen";
 import Auth from "./src/containers/Auth/Auth";
 import Home from "./src/containers/Home";
+import ExploreScreen from "./src/containers/Explore";
 import Shows from "./src/containers/Shows";
 import Explore from "./src/assets/img/ex.png";
 import ExploreAct from "./src/assets/img/ex-active.png";
@@ -35,16 +36,16 @@ const RouterComponent = () => {
             key="Home"
             icon={BaseIcon}
             component={Home}
-            initial={true}
             hideNavBar="true"
             title="Home"
           />
           <Scene
             key="Explore"
             icon={BaseImage}
-            component={Shows}
+            component={ExploreScreen}
             hideNavBar="true"
             title="Explore"
+            initial={true}
           />
           <Scene
             key="Categories"
