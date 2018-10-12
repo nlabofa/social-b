@@ -8,6 +8,7 @@ import Home from "./src/containers/Home";
 import ExploreScreen from "./src/containers/Explore";
 import CategoriesScreen from "./src/containers/Categories";
 import Shows from "./src/containers/Shows";
+import You from "./src/containers/You";
 import Explore from "./src/assets/img/ex.png";
 import ExploreAct from "./src/assets/img/ex-active.png";
 import Categories from "./src/assets/img/cat.png";
@@ -53,14 +54,14 @@ const RouterComponent = () => {
             component={CategoriesScreen}
             hideNavBar="true"
             title="Categories"
-            initial={true}
           />
           <Scene
             key="You"
             icon={BaseIcon}
-            component={Shows}
+            component={You}
             hideNavBar="true"
             title="You"
+            initial={true}
           />
         </Scene>
       </Scene>
